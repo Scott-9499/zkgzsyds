@@ -30,14 +30,12 @@
     font-size: 36px;
     font-weight: bold;
     text-decoration: none;
+    margin: 0;
 }
 .page-top p{
     font-size: 16px;
     color:black;
 }
-
-
-
 .page-con{
     height: 100vh;
     display: flex;

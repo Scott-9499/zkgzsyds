@@ -25,7 +25,7 @@
     background: #fff;
     box-shadow: 4px 0 4px 0 #ccc;
 }
-.page-top a{
+.page-top h1{
     color: black;
     font-size: 36px;
     font-weight: bold;
@@ -42,7 +42,7 @@
     height: 100vh;
     display: flex;
     margin-top: 10.8vh;
-    background-color: whitesmoke;
+    background-color: white
 }
 /* pc-nav=左侧菜单  */
 .pc-nav{
@@ -55,7 +55,7 @@
     left: 0;
     width: 10%;
     height: 89.2vh;
-    background: #fff;
+    background: whitesmoke;
     box-shadow: 4px 0 4px 0 #ccc;
 }
 .pc-box{
@@ -117,7 +117,7 @@
 .user-info{
     width: 322px;
     height:350px;
-    background: whitesmoke;
+    background: white;
     box-shadow: 0px 10px 15px -3px rgba(68,68,68,0.25);
 }
 .ui-img img{
@@ -262,4 +262,40 @@
     height: 30px;
     margin-right: 5px;
 }
-
+.announcement{
+    background-color: white;
+    margin-left: 30px;
+}
+.announcement hr{
+    height: 3px;
+    background-color: #000;
+    margin: 20px 0;
+}
+.announcement h2{
+    font-size: 36px;
+    color: #000;
+    text-align: center;
+    margin: 20px 0;
+}
+.announcement h3{
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+    margin: 20px 0;
+}
+.announcement p{
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 26px;
+    margin-top: 20px;
+}
+.announcement span{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    line-height: 26px;
+    padding-left: 2em;
+    white-space: pre-wrap;
+}
