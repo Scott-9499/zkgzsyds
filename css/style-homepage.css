@@ -104,8 +104,8 @@
     /* margin-top: 30px; */
 }
 .banner{
-    width: 1230px;
-    height: 350px;
+    width: 1280px;
+    height: auto;
 }
 .banner img{
     display: block;
@@ -262,4 +262,18 @@
     height: 30px;
     margin-right: 5px;
 }
-
+.footer{
+    background-color: whitesmoke;
+    height: 80px;
+    margin: 15px -3.7vw ;
+}
+.copyright p{
+    /* width: 1200px; */
+    border-top: 1px solid #e1dedd;
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    color: #b1b1b1;
+    line-height: 20px;
+}

@@ -61,7 +61,7 @@
 .pc-box{
     width: 84vw;
     padding-bottom: 50px;
-    margin-left: 13vw;
+    margin-left: 12vw;
 }
 .nav{
     width: 100%;
@@ -298,4 +298,19 @@
     line-height: 26px;
     padding-left: 2em;
     white-space: pre-wrap;
+}
+.footer{
+    background-color: whitesmoke;
+    height: 80px;
+    margin: 15px -3.7vw ;
+}
+.copyright p{
+    /* width: 1200px; */
+    border-top: 1px solid #e1dedd;
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    color: #b1b1b1;
+    line-height: 20px;
 }
