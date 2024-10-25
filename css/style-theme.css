@@ -55,11 +55,11 @@
     left: 0;
     width: 10%;
     height: 89.2vh;
-    background: whitesmoke;
+    background: white;
     box-shadow: 4px 0 4px 0 #ccc;
 }
 .pc-box{
-    width: 84vw;
+    width: 84.62vw;
     padding-bottom: 50px;
     margin-left: 12vw;
 }
@@ -263,13 +263,18 @@
     margin-right: 5px;
 }
 .announcement{
-    background-color: white;
+    /* border: 1px solid black; */
+    background: url(../image/800.jpg);
+    background-size: cover;
+    background-position: left bottom;
     margin-left: 30px;
+    position: relative;
+    width: 94%;
 }
 .announcement hr{
     height: 3px;
-    background-color: #000;
-    margin: 20px 0;
+    background-color: black;
+    margin: 20px 0 60px 0;
 }
 .announcement h2{
     font-size: 36px;
@@ -299,9 +304,11 @@
     padding-left: 2em;
     white-space: pre-wrap;
 }
+
 .footer{
     background-color: whitesmoke;
     height: 80px;
+    width: 107%;
     margin: 15px -3.7vw ;
 }
 .copyright p{
@@ -313,4 +320,12 @@
     text-align: center;
     color: #b1b1b1;
     line-height: 20px;
+}
+
+.right-img{
+    position:absolute;
+    top: 30px;
+    right: 0px;
+    max-width: 70%;
+    max-height: 70%;     
 }
