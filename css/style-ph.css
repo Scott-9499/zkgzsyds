@@ -58,6 +58,15 @@
     background: #fff;
     box-shadow: 4px 0 4px 0 #ccc;
 }
+.pc-nav .nav a:hover {
+    background-color: darkblue; 
+    color: white; 
+}
+
+.pc-nav .nav a.active {
+    background-color: skyblue; 
+    color: black; 
+}
 .pc-box{
     width: 84vw;
     padding-bottom: 50px;
@@ -81,17 +90,7 @@
 .nav a:hover{
     color: #e98d0a;
 }
-/* .banner{
-    width: 84vw;
-    height: 42vh;
-}
-.banner img{
-    display: block;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 10px 15px -3px rgba(68,68,68,0.25);
-    border-radius: 10px;
-} */
+
 .travel-box-list{
     text-decoration: none;
     background: #fff;
