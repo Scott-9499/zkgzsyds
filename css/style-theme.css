@@ -182,19 +182,19 @@
     line-height: 25px;
     border-radius: 3px;
   
-    &:hover {
+
+  }
+.pulse-shrink:hover {
       animation-name: pulse-shrink;
       animation-duration: .3s; 
       animation-timing-function: linear;
       animation-iteration-count: infinite;
       animation-direction: alternate;
-    }
-  }
-
-  @keyframes pulse-shrink {
+}
+@keyframes pulse-shrink {
     0% { transform: scale(1); }
     100% { transform: scale(0.9); }
-  }
+}
 
 
 .zuopin{
