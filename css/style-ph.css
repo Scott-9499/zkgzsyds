@@ -44,7 +44,6 @@
     margin-top: 10.8vh;
     background-color: whitesmoke;
 }
-/* pc-nav=左侧菜单  */
 .pc-nav{
     position: fixed;
     display: flex;
@@ -68,9 +67,10 @@
     color: black; 
 }
 .pc-box{
-    width: 84vw;
+    width: calc(100% - 10vw);
     padding-bottom: 50px;
-    margin-left: 13vw;
+    margin-left: 10vw;
+
 }
 .nav{
     width: 100%;
@@ -93,16 +93,19 @@
 
 .travel-box-list{
     text-decoration: none;
-    background: #fff;
+    background: white;
     border-radius: 10px;
     display: flex;
-    padding: 25px 20px;
-    margin-bottom: 20px;
+    /* padding: 25px 20px; */
+    margin:25px 0px;
 }
-
+.travel-img{
+    background-color: whitesmoke;
+}
 .travel-img img{
-    width: 130vh;
-    height: auto;
+    padding-left: 20px;
+    width: 1024px;
+    height: 640px;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -113,6 +116,7 @@
 .travel-text h3{
     border-left: #000 3px solid;
     padding-left: 10px;
+    margin-top: 15px;
     font-size: 24px;
     color: #000;
 }
@@ -122,6 +126,7 @@
     color: #666;
     line-height: 40px;
     margin: 20px 0;
+    overflow: hidden;
 }
 .travel-text span{
     display: flex;
@@ -138,10 +143,9 @@
 .footer{
     background-color: whitesmoke;
     height: 80px;
-    margin: 15px -3.7vw ;
+    margin: 15px 0;
 }
 .copyright p{
-    /* width: 1200px; */
     border-top: 1px solid #e1dedd;
     padding-top: 16px;
     font-size: 14px;

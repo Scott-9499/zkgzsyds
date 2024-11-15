@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <title>我品我秀</title>
         <link rel="stylesheet" href="../css/style-theme.css">
+        <link rel="stylesheet" href="../flip/flip.min.css">
     </head>
+
     <body>
         <div class="page">
             <!--顶部-->
@@ -33,12 +35,34 @@
                     <div class="pc-box">
                         <div class="home-top">
                             <div class="banner">
-                                <img src="../image/food-banner-3.jpg" alt="">
+                                <img src="../image/food-banner.jpg" alt="">
                             </div>
                             <div class="toupiao">
                                 <div class="vote-img">
-                                    <img src="../image/xiaotu.png" alt="">
+                                    <img src="../image/lachang.png" alt="">
 
+                                </div>
+                                <div class = "countdownbox">                           
+                                    <div class="tick" data-did-init="handleTickInit">
+                                        <div
+                                            data-repeat="true"
+                                            data-layout="horizontal center fit"
+                                            data-transform="preset(d, h, m, s) -> delay"
+                                        >
+                                            <div class="tick-group">
+                                                <div
+                                                    data-key="value"
+                                                    data-repeat="true"
+                                                    data-transform="pad(00) -> split -> delay"
+                                                >
+                                                    <span data-view="flip"></span>
+                                                </div>
+                            
+                                                <span data-key="label" data-view="text" class="tick-label tick-text" data-value="${locale.SECOND_PLURAL}">${locale.SECOND_PLURAL}</span>
+                            
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="vote-text">
                                     
@@ -135,5 +159,31 @@
                 </div>
             </div>
         </div>
+        <script>
+            function handleTickInit(tick) {
+                var locale = {
+
+            DAY_PLURAL: '天',
+            DAY_SINGULAR: '天',
+            HOUR_PLURAL: '小时',
+            HOUR_SINGULAR: '小时',
+            MINUTE_PLURAL: '分',
+            MINUTE_SINGULAR: '分',
+            SECOND_PLURAL: '秒',
+            SECOND_SINGULAR: '秒'};
+            for (var key in locale) {
+            if (!locale.hasOwnProperty(key)) { continue; }
+            tick.setConstant(key, locale[key]);
+        }
+
+
+                var targetDate = '2024/12/24 00:00:00';
+
+                Tick.count.down(targetDate).onupdate = function (value) {
+                    tick.value = value;
+                };
+            }
+        </script>
+        <script src="../flip/flip.min.js"></script>
     </body>
 </html>

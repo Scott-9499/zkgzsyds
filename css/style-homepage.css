@@ -45,7 +45,7 @@
     background-color: whitesmoke;
     width: 1547px;
 }
-/* pc-nav=左侧菜单  */
+
 .pc-nav{
     position: fixed;
     display: flex;
@@ -121,7 +121,7 @@
     width: 100%;
     height: 100%;
     box-shadow: 0px 10px 15px -3px rgba(68,68,68,0.25);
-    /* border-radius: 10px; */
+    
 }
 
 .footer{
@@ -130,7 +130,7 @@
     margin: 15px -3.7vw ;
 }
 .copyright p{
-    /* width: 1200px; */
+    
     border-top: 1px solid #e1dedd;
     padding-top: 16px;
     font-size: 14px;
@@ -138,4 +138,5 @@
     text-align: center;
     color: #b1b1b1;
     line-height: 20px;
-}
+} 
+

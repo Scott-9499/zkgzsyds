@@ -44,7 +44,7 @@
     margin-top: 10.8vh;
     background-color: white
 }
-/* pc-nav=左侧菜单  */
+
 .pc-nav{
     position: fixed;
     display: flex;
@@ -125,7 +125,7 @@
 .toupiao{
     width: 300px;
     height:350px;
-    background: white;
+    background: linear-gradient(to top, #FFF5E6, #F5F5DC);
     box-shadow: 0px 10px 15px -3px rgba(68,68,68,0.25);
     border-radius: 10px;
 }
@@ -133,15 +133,46 @@
     display: block;
     width: 100%;
     height: auto;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
 
 }
+.countdownbox {
+    width: 80%;
+    margin: 10px 10px 72px 10px;
+    padding: 5%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .tick {
+    padding-bottom: 1em;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans,
+        Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+.tick-label {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.tick-group {
+    margin: 0 0.25em;
+    text-align: center;
+}
+
 .vote-text{
     text-align: center;
-
-    margin-top: 12px;
     
 }
-
+.link{
+    margin-top: -90px;
+}
 .link a{
     text-align: center;
     text-decoration: none;
@@ -213,15 +244,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .zuopin-box ul li{
     list-style: none;
-    width: 23%;
+    min-width: 300px;
+    max-width: 300px;
+    height: 260px;
+    box-sizing: inherit;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 30px;
-    margin-right: 2.66%;
 }
 .zuopin-box ul li a{
     text-decoration: none;
@@ -245,16 +278,12 @@
 .announcement{
     width: 1024px;
     height: 1820px;
-    /* overflow: scroll; */
-    /* border: 1px solid black; */
-    background: url(../image/800.jpg);
-    background-size: 100% auto;
-    /* background-position: left bottom; */
-    background-position: center;
-
+    background: linear-gradient(to bottom, #FFF5E6, #F5F5DC);  
     margin-left: 30px;
     position: relative;
     width: 94%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .announcement hr{
     height: 3px;
@@ -266,16 +295,17 @@
     color: #000;
     text-align: center;
     margin: 20px 0;
+    margin-left: -15vw;
 }
 .announcement h3{
     font-size: 24px;
     color: #000;
     text-align: center;
     margin: 20px 0;
+    margin-left: -15vw;
 }
 .announcement p{
     display: block;
-    /* margin-left: 2em; */
     font-size: 18px;
     font-weight: 400;
     color: black;
@@ -291,7 +321,6 @@
     color: black;
     line-height: 30px;
     white-space: pre-wrap;
-    /* margin-bottom: -80px; */
 }
 
 .footer{
@@ -301,7 +330,6 @@
     margin: 15px -3.7vw ;
 }
 .copyright p{
-    /* width: 1200px; */
     border-top: 1px solid #e1dedd;
     padding-top: 16px;
     font-size: 14px;
