@@ -284,6 +284,7 @@
     width: 94%;
     overflow-y: scroll;
     overflow-x: hidden;
+    box-shadow: 4px 4px 4px 0 #ccc;
 }
 .announcement hr{
     height: 3px;
