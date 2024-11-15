@@ -40,10 +40,10 @@
 
 .page-con{
     height: 100vh;
-    display: flex;
+    display: block;
     margin-top: 10.8vh;
     background-color: whitesmoke;
-    width: 1547px;
+    width: auto;
 }
 
 .pc-nav{
@@ -103,7 +103,7 @@
     font-size: 16px;
     color: #666;
     margin-block-start: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .home-top{
     display: flex;
@@ -125,9 +125,10 @@
 }
 
 .footer{
+    display:block;
     background-color: whitesmoke;
     height: 80px;
-    margin: 15px -3.7vw ;
+    margin: 15px 0;
 }
 .copyright p{
     
