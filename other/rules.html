@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>规则详情</title>
-        <link rel="stylesheet" href="../css/style-theme.css">
-    </head>
-    <body>
-        <div class="page">
-            <!--顶部-->
-            <div class="page-top">
-                <img src="../image/logo.png" alt="">
-                <h1>
-                    规则详情
-                </h1>
-                <p>请在参赛前仔细阅读以下须知</p>
-            </div> 
-            <!--内容区-->
-            <div class="page-con">
-                <div class="pc-nav">
+
+<head>
+    <meta charset="utf-8">
+    <title>规则详情</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style-theme.css">
+    <link rel="stylesheet" href="../flip/flip.min.css">
+</head>
+
+<div class="page">
+    <!-- 顶部 -->
+    <div class="page-top">
+        <img src="../image/logo.png" alt="">
+        <h1>规则详情</h1>
+        <p>&nbsp;</p>
+    </div>
+    <!-- 内容区 -->
+    <div class="page-con">
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <!-- 导航栏 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 pc-nav">
                     <div class="nav">
-                    <a href="../index.html" >首页</a>
-                    <a href="./food.html">我品我秀</a> 
-                    <a href="./travel.html">我行我秀</a>
-                    <a href="./season.html">我歆我秀</a>
-                    <a href="./rules.html" class="active">规则详情</a> 
-                    </div> 
+                        <a href="../demo/index.html" title="返回首页">首页</a>
+                        <a href="./food.html">我品我秀</a>
+                        <a href="./travel.html">我行我秀</a>
+                        <a href="./season.html">我歆我秀</a>
+                        <a href="./rules.html" class="active">规则详情</a>
+                    </div>
+                    <img src="../image/right-poster.png" class="right-img">
                     <div class="QRcode">
                         <img src="../image/QRCode.png" alt="">
                         <p>扫一扫进入投票问卷</p>
-                    </div> 
+                    </div>
                 </div>
-                <div class="pc-box">
-                    <div class="announcement">
-                        <h2>规则详情</h2>
-                        <hr>
-                        <article>
-                            <h3>一、参赛规则</h3>
+                <!-- 主要内容 -->
+                <div class="col-lg-10 col-md-9 col-sm-8">
+                    <div class="pc-box">
+                        <div class="announcement">
+                            <h2>规则详情</h2>
+                            <hr>
+                            <article>
+                                <h3>一、参赛规则</h3>
                                 <p>1. 所有参赛作品必须是原创，严禁使用人工智能生成的图片参赛。</p>
                                 <p>2. 请确保作品以JPG (JPEG)/PNG格式提交，不得在图片上添加任何文字、水印标志。</p>
                                 <p>3. 参赛者所提交的作品不得包含任何形式的个人隐私或身份识别信息。</p>
                                 <p>4. 关于照片上传的具体规定：</p>
-                                    <span class="indent-text">
-    1）本次摄影比赛设有三个不同项目，每位参赛者每个项目仅限提交一张照片；
-    2）请将参赛作品发送至官方指定邮箱：Scott_w0602@163.com；
-    3）请将作品按照“项目名称_拍摄日期.jpg”的格式命名，如：“我行我秀_20230328.jpg”；
-    4）请把作品以邮件附件的形式上传；
-    5）请在邮件主题里注明“中科国智摄影大赛”字样，并在邮件正文中提供您的真实姓名及联系电话。
-                                    </span>    
+                                <span class="indent-text">
+1）本次摄影比赛设有三个不同项目，每位参赛者每个项目仅限提交一张照片；
+2）请将参赛作品发送至官方指定邮箱：Scott_w0602@163.com；
+3）请将作品按照“项目名称_拍摄日期.jpg”的格式命名，如：“我行我秀_20230328.jpg”；
+4）请把作品以邮件附件的形式上传；
+5）请在邮件主题里注明“中科国智摄影大赛”字样，并在邮件正文中提供您的真实姓名及联系电话。
+                                </span>
                                 <p>5. 照片摄制时间不做限制，原则上主办方更希望看到新一点的照片。</p>
                                 <p>6. 作品内容健康向上，符合公序良俗和法律法规。</p>
                                 <p>7. 凡选送作品参赛者，均视为同意并遵守以上各条规定；</p>
                                 <p>8. 对于比赛有任何疑问或建议，请通过电子邮件Scott_w0602@163.com与主办方联系；</p>
                                 <p>9. 本次活动最终解释权为主办方所有。</p>
-                            <h3>二、评比规则</h3>
+                                <h3>二、评比规则</h3>
                                 <p>本次摄影比赛设有三个不同项目，以问卷形式开放内部投票。</p>
                                 <p>内部投票开放时间TBD</p>
                                 <p>每个项目根据得票数高低排出前三名，发放奖励。</p>
                                 <p>若出现平票情况的，奖励顺延</p>
-                            <h3 id="jiangpingongshi">三、奖品公示</h3>
+                                <h3 id="jiangpingongshi">三、奖品公示</h3>
                                 <p>第一名</p>
                                 <p>xxxx一个</p>
                                 <p>第二名</p>
@@ -65,24 +72,29 @@
                                 <p>第三名</p>
                                 <p>xxxxxxxx两个</p>
                                 <!-- <p>第三名</p>
-                                <p>第三名</p>
+                        <p>第三名</p>
+                    
+                        <p>第三名</p> -->
+
+                            </article>
                             
-                                <p>第三名</p> -->
-                            
-                        </article>
-                        <img src="../image/right-poster.png" class="right-img">    
+                        </div>
+
+                        <div class="footer">
+                            <div class="copyright">
+                                <p>
+                                    COPYRIGHT ©2018 中科国智科技服务（上海）有限公司<br>
+                                    主办：办公室
+                                </p>
+                            </div>
+                        </div>
                     </div>
-            <div class="footer">
-                <div class="copyright">
-                    <p>
-                    COPYRIGHT ©2018 中科国智科技服务（上海）有限公司</br>
-                    主办：办公室
-                    </p>
                 </div>
             </div>
-                </div>
-
-            </div>          
         </div>
+    </div>
+
+    <script src="../flip/flip.min.js"></script>
     </body>
+
 </html>

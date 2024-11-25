@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>我品我秀</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style-theme.css">
+  <link rel="stylesheet" href="../flip/flip.min.css">
+</head>
+
+<div class="page">
+  <!-- 顶部 -->
+  <div class="page-top">
+    <img src="../image/logo.png" alt="">
+    <h1>我品我秀</h1>
+    <p>记录舌尖滋味，定格唇齿留香</p>
+  </div>
+  <!-- 内容区 -->
+  <div class="page-con">
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <!-- 导航栏 -->
+        <div class="col-lg-2 col-md-3 col-sm-4 pc-nav">
+          <div class="nav">
+            <a href="../demo/index.html" title="返回首页">首页</a>
+            <a href="./food.html" class="active">我品我秀</a>
+            <a href="./travel.html">我行我秀</a>
+            <a href="./season.html">我歆我秀</a>
+            <a href="./rules.html">规则详情</a>
+          </div>
+          <div class="QRcode">
+            <img src="../image/QRCode.png" alt="">
+            <p>扫一扫进入投票问卷</p>
+          </div>
+        </div>
+        <!-- 主要内容 -->
+        <div class="col-lg-10 col-md-9 col-sm-8">
+          <div class="pc-box">
+            <div class="home-top">
+              <div class="row" >
+                <!-- 广告图 -->
+                <div class="col-lg-7 col-md-8 col-sm-11 banner">
+                  <img src="../image/food-banner.jpg" alt="">
+                </div>
+                <!-- 投票区域 -->
+                <div class="col-lg-5 d-none d-lg-block toupiao">
+                  <div class="vote-img">
+                    <img src="../image/lachang.png" alt="">
+                  </div>
+                  <div class="countdownbox">
+                    <div class="tick" data-did-init="handleTickInit">
+                      <div data-repeat="true" data-layout="horizontal center fit"
+                        data-transform="preset(d, h, m, s) -> delay">
+                        <div class="tick-group">
+                          <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                            <span data-view="flip"></span>
+                          </div>
+                          <span data-key="label" data-view="text" class="tick-label tick-text"
+                            data-value="${locale.SECOND_PLURAL}">${locale.SECOND_PLURAL}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vote-text">
+                    <div class="link">
+                      <a href="https://survey.zohopublic.com.cn/zs/sJEAnT" class="pulse-shrink" target="_blank">点击投票</a>
+                      <a href="./rules.html#jiangpingongshi" class="pulse-shrink">奖品公示</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 作品展示 -->
+            <div class="wrapbox">
+              <div class="zuopin">
+                <h3 class="common-title">作品展示</h3>
+                <div class="zuopin-box">
+                  <ul>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp1.jpg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp2.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp3.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp4.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp1.jpg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp2.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp3.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp4.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp1.jpg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp2.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp3.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="../image/zp4.jpeg" alt="作品名称">
+                        <p>作品名称</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <!-- 投票区域在中小屏幕时放在作品展示后面 -->
+              <div class="d-lg-none toupiao mt-4">
+                <div class="vote-img">
+                  <img src="../image/lachang.png" alt="">
+                </div>
+                <div class="countdownbox">
+                  <div class="tick" data-did-init="handleTickInit">
+                    <div data-repeat="true" data-layout="horizontal center fit"
+                      data-transform="preset(d, h, m, s) -> delay">
+                      <div class="tick-group">
+                        <div data-key="value" data-repeat="true" data-transform="pad(00) -> split -> delay">
+                          <span data-view="flip"></span>
+                        </div>
+                        <span data-key="label" data-view="text" class="tick-label tick-text"
+                          data-value="${locale.SECOND_PLURAL}">${locale.SECOND_PLURAL}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="vote-text">
+                  <div class="link">
+                    <a href="https://survey.zohopublic.com.cn/zs/sJEAnT" class="pulse-shrink" target="_blank">点击投票</a>
+                    <a href="./rules.html#jiangpingongshi" class="pulse-shrink">奖品公示</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 页脚 -->
+            <div class="footer">
+              <div class="copyright">
+                <p>
+                  COPYRIGHT ©2018 中科国智科技服务（上海）有限公司<br>
+                  主办：办公室
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function handleTickInit(tick) {
+      var locale = {
+        DAY_PLURAL: '天',
+        DAY_SINGULAR: '天',
+        HOUR_PLURAL: '小时',
+        HOUR_SINGULAR: '小时',
+        MINUTE_PLURAL: '分',
+        MINUTE_SINGULAR: '分',
+        SECOND_PLURAL: '秒',
+        SECOND_SINGULAR: '秒'
+      };
+      for (var key in locale) {
+        if (!locale.hasOwnProperty(key)) { continue; }
+        tick.setConstant(key, locale[key]);
+      }
+
+      var targetDate = '2024/12/24 00:00:00';
+
+      Tick.count.down(targetDate).onupdate = function (value) {
+        tick.value = value;
+      };
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="../flip/flip.min.js"></script>
+
+  </body>
+
+</html>

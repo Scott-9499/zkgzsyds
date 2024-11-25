@@ -1,0 +1,389 @@
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.body {
+font-size: 16px;
+background: #efefef;
+}
+.page {
+width: 100%;
+height: 100vh;
+}
+.page-top {
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+z-index: 999;
+align-items: center;
+justify-content: space-between;
+height: 10.8vh;
+width: 100%;
+padding-left: 3%;
+padding-right: 3%;
+background: #fff;
+box-shadow: 4px 4px 4px 0 #ccc;
+}
+.page-top h1 {
+color: black;
+font-size: 36px;
+font-weight: bold;
+text-decoration: none;
+}
+.page-top p {
+font-size: 16px;
+color: black;
+}
+
+.page-con {
+height: 100vh;
+display: flex;
+margin-top: 10.8vh;
+background-color: white;
+}
+
+.pc-nav {
+position: fixed;
+display: flex;
+flex-wrap: wrap;
+align-content: space-between;
+top: 0;
+padding-top: 10.8vh;
+left: 0;
+width: 10%;
+height: 100vh;
+background: white;
+box-shadow: 4px 0 4px 0 #ccc;
+z-index: 99;
+}
+.pc-nav .nav a:hover {
+background-color: darkblue;
+color: white;
+}
+
+.pc-nav .nav a.active {
+background-color: skyblue;
+color: black;
+}
+.pc-box {
+width: 84.62vw;
+padding-bottom: 50px;
+margin-left: 12vw;
+}
+.nav {
+width: 100%;
+margin-top: 6vh;
+}
+.nav a {
+display: block !important;
+width: 100%;
+font-weight: 500;
+text-align: center;
+color: black;
+padding: 25px 0px;
+text-decoration: none;
+min-width: 66px;
+white-space: nowrap;
+
+}
+.nav.active {
+color: #e98d0a;
+}
+.nav a:hover {
+color: #e98d0a;
+}
+
+.QRcode {
+width: 100%;
+text-align: center;
+}
+.QRcode img {
+width: 100%;
+height: auto;
+}
+.QRcode p {
+font-size: 16px;
+color: #666;
+margin-block-start: 10px;
+margin-bottom: 20px;
+}
+
+.home-top {
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin-top: 30px;
+}
+
+
+.banner {
+width: 100%;
+height: 350px;
+margin-right: auto;
+}
+.banner img {
+display: block;
+width: 100%;
+height: 100%;
+box-shadow: 0px 10px 15px -3px rgba(68, 68, 68, 0.25);
+}
+
+.toupiao {
+width: 330px;
+height: 350px;
+background: linear-gradient(to top, #FFF5E6, #F5F5DC);
+box-shadow: 0px 10px 15px -3px rgba(68, 68, 68, 0.25);
+border-radius: 10px;
+padding: 0;
+margin-right: 7vw;
+
+}
+.vote-img img {
+display: block;
+width: 100%;
+height: auto;
+position: relative;
+top: 0;
+margin: 0 auto;
+}
+.countdownbox {
+width: 80%;
+margin: 10px 10px 72px 10px;
+padding: 5%;
+background-attachment: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.tick {
+padding-bottom: 1em;
+font-size: 1rem;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+.tick-label {
+font-size: 0.75em;
+text-align: center;
+}
+.tick-group {
+margin: 0 0.25em;
+text-align: center;
+}
+.vote-text {
+text-align: center;
+}
+.link {
+margin-top: -90px;
+}
+.link a {
+text-align: center;
+text-decoration: none;
+display: inline-block;
+width: 72px;
+height: 25px;
+font-size: 12px;
+line-height: 25px;
+border-radius: 3px;
+}
+.link a:nth-child(1) {
+background: black;
+color: white;
+border: 1px solid black;
+}
+.link a:nth-child(2) {
+background: white;
+color: black;
+border: 1px solid black;
+margin-left: 20px;
+}
+.pulse-shrink {
+display: inline-block;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+will-change: transform;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+width: 72px;
+height: 25px;
+font-size: 12px;
+line-height: 25px;
+border-radius: 3px;
+}
+.pulse-shrink:hover {
+animation-name: pulse-shrink;
+animation-duration: .3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+@keyframes pulse-shrink {
+0% { transform: scale(1); }
+100% { transform: scale(0.9); }
+}
+
+.zuopin {
+width: 100%;
+margin-top: 20px;
+overflow-y: auto;
+overflow-x: hidden;
+}
+.common-title {
+font-size: 22px;
+color: black;
+border-left: 5px solid black;
+padding-left: 10px;
+margin-bottom: 25px;
+margin-top: 25px;
+}
+/* .zuopin-box ul {
+padding: 0;
+list-style: none;
+margin: 0;
+
+}
+
+.zuopin-box ul li {
+list-style: none;
+background: #fff;
+border-radius: 10px;
+overflow: hidden;
+margin-bottom: 30px;
+gap: 30px;
+}
+
+.zuopin-box ul li a {
+text-decoration: none;
+display: block;
+height: 100%;
+}
+
+.zuopin-box ul li img {
+width: 100%;
+height: 220px;
+display: block;
+object-fit: cover;
+}
+
+.zuopin-box ul li p {
+padding: 15px 0;
+text-align: center;
+color: black;
+font-size: 18px;
+margin: 0;
+} */
+
+
+
+
+
+.zuopin-box {
+display: grid;
+gap: 20px; /* 设置间距 */
+padding: 20px;
+}
+
+.zuopin-box ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+display: contents; /* 让ul成为grid容器的一部分 */
+}
+
+.zuopin-box li {
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+overflow: hidden;
+transition: transform 0.2s ease-in-out;
+}
+
+.zuopin-box li:hover {
+transform: scale(1.05);
+}
+
+.zuopin-box a {
+text-decoration: none;
+color: inherit;
+display: block;
+padding: 10px;
+}
+
+.zuopin-box img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+.zuopin-box p {
+text-align: center;
+margin: 10px 0;
+}
+
+
+.footer {
+background-color: whitesmoke;
+height: 80px;
+width: 105vw;
+margin: 15px 0 0 0;
+}
+.copyright p {
+border-top: 1px solid #e1dedd;
+padding-top: 16px;
+font-size: 14px;
+font-weight: lighter;
+text-align: center;
+color: #b1b1b1;
+line-height: 20px;
+}
+
+.right-img {
+position: fixed;
+top: 30px;
+right: 82px;
+max-width: 100%;
+max-height: 100%;
+z-index: 100;
+}
+.d-lg-none{
+width: 50%;
+max-width: 450px; /* 原来的宽度的一半 */
+height: 175px; /* 原来的高度的一半 */
+background: linear-gradient(to top, #FFF5E6, #F5F5DC);
+box-shadow: 0px 10px 15px -3px rgba(68, 68, 68, 0.25);
+border-radius: 10px;
+padding: 15px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+/* 大屏幕（>= 900px）：每行4个 */
+@media (min-width: 900px) {
+.zuopin-box {
+grid-template-columns: repeat(4, 24%);
+}
+}
+
+/* 中等屏幕（600px - 899px）：每行3个 */
+@media (min-width: 600px) and (max-width: 899px) {
+.zuopin-box {
+grid-template-columns: repeat(3, 32%);
+}
+}
+
+/* 小屏幕（<= 599px）：每行2个 */
+@media (max-width: 599px) {
+.zuopin-box {
+grid-template-columns: repeat(2, 48%);
+}
+.page-top{
+height: 5.4vh;
+}
+.pc-nav{
+padding-top: 5.4vh;
+}
+}

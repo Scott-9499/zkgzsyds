@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.zuopin-box {
+  display: grid;
+  gap: 20px; /* 设置间距 */
+  padding: 20px;
+}
+
+.zuopin-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: contents; /* 让ul成为grid容器的一部分 */
+}
+
+.zuopin-box li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.zuopin-box li:hover {
+  transform: scale(1.05);
+}
+
+.zuopin-box a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 10px;
+}
+
+.zuopin-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.zuopin-box p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* 默认样式（适用于所有屏幕） */
+.zuopin-box {
+  grid-template-columns: repeat(2, 48%); /* 默认每行两个元素 */
+}
+
+/* 大屏幕（>= 900px）：每行4个 */
+@media (min-width: 900px) {
+  .zuopin-box {
+    grid-template-columns: repeat(4, 24%);
+  }
+}
+
+/* 中等屏幕（600px - 899px）：每行3个 */
+@media (min-width: 600px) and (max-width: 899px) {
+  .zuopin-box {
+    grid-template-columns: repeat(3, 32%);
+  }
+}
+
+/* 小屏幕（<= 599px）：每行2个 */
+@media (max-width: 599px) {
+  .zuopin-box {
+    grid-template-columns: repeat(2, 48%);
+  }
+}
