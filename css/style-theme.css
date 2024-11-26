@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   background: #efefef;
-  font-family: '微软雅黑', sans-serif !important; /* 强制设置全局字体为微软雅黑 */
+  font-family: '微软雅黑', sans-serif !important; 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -23,7 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 54px; /* 固定高度改为具体数值 */
+  height: 54px; 
   width: 100%;
   padding-left: 3%;
   padding-right: 3%;
@@ -54,23 +54,23 @@ body {
   background-color: white;
   padding: 0rem;
 
-  flex: 1; /* 使内容区域占据剩余空间 */
+  flex: 1; 
 }
 
 .pc-nav {
-  display: none; /* 默认隐藏侧边栏 */
+  display: none; 
   flex-direction: column;
   top: 0;
-  padding-top: 54px; /* 固定高度改为具体数值 */
+  padding-top: 54px; 
   left: 0;
-  width: 10%; /* 宽度适当减小 */
+  width: 10%;
   max-width: 15%;
   background: white;
   box-shadow: 4px 0 4px 0 #ccc;
   z-index: 99;
   padding: 1rem;
   padding-top: 0;
-  min-height: calc(100vh - 54px); /* 确保至少占满剩余视口高度 */
+  min-height: calc(100vh - 54px);
 }
 
 
@@ -99,7 +99,7 @@ body {
 .pc-box {
   width: 100%;
   padding-bottom: 50px;
-  min-height: calc(100vh - 54px); /* 确保至少占满剩余视口高度 */
+  min-height: calc(100vh - 54px);
   display: flex;
   flex-direction: column;
 }
@@ -113,9 +113,10 @@ body {
 
 .banner {
   width: 100%;
-  height: 350px; /* 高度改为具体数值 */
+  height: auto; 
   margin: 1 rem;
   margin-right: auto;
+  max-height: 350px;
 }
 
 .banner img {
@@ -129,12 +130,10 @@ body {
 .toupiao {
   width: 100%;
   max-width: 330px;
-  height: 350px; /* 高度改为具体数值 */
+  height: 350px; 
   background: linear-gradient(to top, #FFF5E6, #F5F5DC);
   box-shadow: 0px 10px 15px -3px rgba(68, 68, 68, 0.25);
   border-radius: 10px;
-  /* padding: 1rem; */
-  /* margin: 1rem 0; */
 }
 
 .vote-img img {
@@ -240,7 +239,7 @@ body {
   margin: 1rem;
   overflow-y: auto;
   overflow-x: hidden;
-  flex-grow: 1; /* 使内容区域占据剩余空间 */
+  flex-grow: 1; 
   display: flex;
   flex-direction: column;
 }
@@ -259,7 +258,7 @@ body {
   display: grid;
   gap: 1rem;
   padding: 1rem;
-  flex-grow: 1; /* 使作品盒子占据剩余空间 */
+  flex-grow: 1; 
 }
 
 .zuopin-box ul {
@@ -387,36 +386,31 @@ body {
 }
 @media (min-width: 600px) {
   .pc-nav {
-    display: flex; /* 在较大屏幕上显示侧边栏 */
+    display: flex; 
   }
 }
-/* 大屏幕（>= 900px）：每行4个 */
 @media (min-width: 900px) {
   .zuopin-box {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
-/* 中等屏幕（600px - 899px）：每行3个 */
 @media (min-width: 600px) and (max-width: 899px) {
   .zuopin-box {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* 小屏幕（<= 599px）：每行2个 */
 @media (max-width: 599px) {
   .zuopin-box {
     grid-template-columns: repeat(2, 1fr);
   }
    .home-top {
     flex-direction: column;
-    align-items: center; /* 居中对齐 */
+    align-items: center; 
   }
 
   .banner img,
   .toupiao {
-    width: 100%; /* 占据整行 */
-    margin: 1rem auto; /* 上下外边距和水平居中 */
+    width: 100%; 
+    margin: 1rem auto;
   }
 }
